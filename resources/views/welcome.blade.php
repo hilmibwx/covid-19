@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
+<head>
 
-        <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5e54caa3a0d7d80012338dfa&product=inline-share-buttons' async='async'></script>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5e54caa3a0d7d80012338dfa&product=inline-share-buttons' async='async'></script>
+<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5e7f066a0c743700190536a0&product=inline-follow-buttons" async="async"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+<title>Laravel</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -185,6 +186,8 @@
 
                         </div>
 
+                        <div class="sharethis-inline-follow-buttons"></div>
+
                         <table class="table">
 
                             <thead class="bg-info text-white shadow">
@@ -236,12 +239,7 @@
                 </div>   
                 
                 <br>
-
-                {{-- {!! $chart->container() !!}
-
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js" charset="utf-8"></script>
-                {!! $chart->script() !!} --}}
-
+                
                 <div class="sharethis-inline-reaction-buttons"></div>
 
             </div>
